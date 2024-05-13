@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/admin.css">
+</head>
+
+<body>
+    <section>
+        <div>
+            <form id="loginform" method="post">
+                <h3>Login</h3>
+                <label for="Email">Email:</label>
+                <input type="email" name="Email" id="Email" placeholder="Email">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById("loginform").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+    
+            // Get the input values from the form
+            const email = document.getElementById('Email').value; // Use correct ID 'Email'
+            const password = document.getElementById('password').value;
+    
+            // Perform validation (you can replace this with your own logic)
+            if (email === "ashaheer727@gmail.com" && password === "12345") {
+                // Redirect to the login.html page
+                window.location.href = "login.html";
+            } else {
+                // Display an error message or handle invalid credentials
+                alert("Invalid email or password. Please try again.");
+            }
+        });
+    </script>
+    
+    
+</body>
+<!-- <script src="script.js"></script> -->
+</html>

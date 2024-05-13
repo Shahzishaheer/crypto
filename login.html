@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    
+    <section>
+        <nav>
+            <button type="button"  onclick="navigateToPage()">signout</button>
+        </nav>
+    </section>
+    <section>
+        <a href="#" onclick="toggleCourseForm()">
+          <img src="assets/images/plus-square-fill.svg" alt="Add Course">
+        </a>
+      </section>
+      <section>
+        <div id="course-form-container" style="display: none;">
+          <h2>Add Course</h2>
+          <form id="add-course-form">
+            <label for="course-title">Course Title:</label>
+            <input type="text" id="course-title" name="course-title" required><br><br>
+            
+            <label for="course-description">Course Description:</label><br>
+            <textarea id="course-description" name="course-description" rows="4" cols="50" required></textarea><br><br>
+            
+            <label for="course-duration">Course Duration:</label>
+            <input type="text" id="course-duration" name="course-duration" required><br><br>
+            
+            <label for="course-instructor">Instructor:</label>
+            <input type="text" id="course-instructor" name="course-instructor" required><br><br>
+            
+            <label for="course-category">Category:</label>
+            <input type="text" id="course-category" name="course-category" required><br><br>
+            
+            <input type="submit" value="Add Course">
+          </form>
+        </div>
+      
+        <h2>Course List</h2>
+        <ul id="course-list">
+          
+        </ul>
+      </section>
+   <script src="assets/js/login.js"></script>
+    
+</html>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educate Yourself About Crypto</title>
+
+
+
+
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo01.jpg" alt="" style="height: 10dvh; width:15dwh;">
+        </a>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <!-- <a href="#" class="logo">
+              <img src="./assets/images/block-chain-6322578_640.png" alt="Homeverse logo">
+            </a> -->
+
+            <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <div class="navbar-bottom">
+            <ul class="navbar-list">
+
+              <li>
+                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              </li>
+
+
+              <li>
+                <a href="#course" class="navbar-link" data-nav-link>Course</a>
+              </li>
+              <li>
+                <a href="#property" class="navbar-link" data-nav-link>Property</a>
+              </li>
+              <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+              </li>
+              <li><button type="button" class="navbar-link" onclick="toggleLoginForm()">Login</button></li>
+              <li><button type="button" class="navbar-link" onclick="openRegisterForm()">Register</button></li>
+            </ul>
+          </div>
+          <div id="loginFormContainer">
+            <h4>login</h4>
+            <form id="loginForm">
+              <label for="Email">Email:</label>
+              <input type="Email" id="Email" name="Email" required placeholder="Email">
+              <br>
+              <br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required placeholder="password">
+              <br>
+              <center><button type="submit" id="loginButton">Submit</button></center>
+            </form>
+          </div>
+
+          <div id="registerFormContainer">
+            <h4>Register</h4>
+            <form>
+              <label for="Name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Name" style="border-radius: 9px;"
+                height="19px;">
+              <br><br>
+              <label for="Email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Email" style="border-radius: 9px;"
+                height="19px;">
+              <br><br>
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required placeholder="Password"
+                style="border-radius: 9px; " height="19px;">
+              <br><br>
+              <label for="bank">Bank</label>
+              <select id="bank" name="bank">
+                <option value="Alfalah">Alfalah</option>
+                <option value="National bank">National bank</option>
+                <option value="Faysal bank">Faysal bank</option>
+              </select>
+              <button type="button">Submit</button>
+            </form>
+          </div>
+
+        </nav>
+
+        <div class="header-bottom-actions">
+
+
+
+          <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+            <ion-icon name="menu-outline"></ion-icon>
+
+            <span>Menu</span>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">
+
+            </p>
+
+            <h2 class="h1 hero-title">Your Crypto Curreny Project Website</h2>
+
+            <p class="hero-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+            </p>
+
+            <button class="btn">Learn About</button>
+
+          </div>
+
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slider-slide">
+                <img src="assets/images/istockbook.jpg " alt="Image 1">
+              </div>
+              <div class="slider-slide">
+                <img src="assets/images/istockphoto1.jpg" alt="Image 2">
+              </div>
+              <div class="slider-slide">
+                <img src="assets/images/istockchild.jpg" alt="Image 3">
+              </div>
+            </div>
+          </div>
+          <button id="backwardBtn"><img src="assets/images/left.svg"></button>
+          <button id="forwardBtn"><img src="assets/images/right.svg"></button>
+
+
+        </div>
+      </section>
+
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <!-- <section class="about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/man-852770_1280.jpg" alt="House interior">
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">Era of Crypto</p>
+
+            <h2 class="h2 section-title">The Leading Marketplace.</h2>
+
+            <p class="about-text">
+              Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
+              combined with
+              specialist services
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="home-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Smart Contracts</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="leaf-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Stock Market</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="wine-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Trading</p>
+              </li>
+
+              <li class="about-item">
+                <div class="about-item-icon">
+                  <ion-icon name="shield-checkmark-outline"></ion-icon>
+                </div>
+
+                <p class="about-item-text">Decentralised</p>
+              </li>
+
+            </ul>
+
+            <p class="callout">
+              "Enimad minim veniam quis nostrud exercitation
+              llamco laboris. Lorem ipsum dolor sit amet"
+            </p>
+
+            <a href="#service" class="btn">Learn About Crypto</a>
+
+          </div>
+
+        </div>
+      </section> -->
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="service" id="course">
+        <center>
+          <h2 class="h2">Cources</h2>
+        </center>
+        <div class="grid">
+          <div class="row">
+            <div class="coloumn">
+              <img src="assets/images/currency-3077534_1280.jpg" alt="" srcset="">
+              <p>take a risk and improve your life </p>
+              <i><img src="assets/images/stack.svg" style="height: 19px; margin-top:25px; opacity:0.7; "></i>
+              <p class="style">23 lesson</p>
+              <i><img src="assets/images/clock.svg"
+                  style="height: 19px; margin-top:25px; opacity:0.7;  position: relative;  top: -76px;right: -160px;"></i>
+              <p class="style1">123 hours</p>
+              <button type="button" class="button">Enrolloment</button>
+            </div>
+            <div class="coloumn">
+              <img src="assets/images/currency-3077534_1280.jpg" alt="" srcset="">
+              <p>take a risk and improve your life </p>
+              <i><img src="assets/images/stack.svg" style="height: 19px; margin-top:25px; opacity:0.7;"></i>
+              <p class="style">23 lesson</p>
+              <i><img src="assets/images/clock.svg"
+                  style="height: 19px; margin-top:25px; opacity:0.7;  position: relative;  top: -76px;right: -160px;"></i>
+              <p class="style1">123 hours</p>
+              <button type="button" class="button">Enrolloment</button>
+            </div>
+
+            <div class="coloumn">
+              <img src="assets/images/currency-3077534_1280.jpg" alt="" srcset="">
+              <p>take a risk and improve your life </p>
+              <i><img src="assets/images/stack.svg" style="height: 19px; margin-top:25px; opacity:0.7;"></i>
+              <p class="style">23 lesson</p>
+              <i><img src="assets/images/clock.svg"
+                  style="height: 19px; margin-top:25px; opacity:0.7;  position: relative;  top: -76px;right: -160px;"></i>
+              <p class="style1">123 hours</p>
+              <button type="button" class="button">Enrolloment</button>
+            </div>
+          </div>
+
+
+          <div class="row" style="margin-top: 30px;">
+            <div class="coloumn">
+              <img src="assets/images/currency-3077534_1280.jpg" alt="" srcset="">
+              <p>take a risk and improve your life </p>
+              <i><img src="assets/images/stack.svg" style="height: 19px; margin-top:25px; opacity:0.7; "></i>
+              <p class="style">23 lesson</p>
+              <i><img src="assets/images/clock.svg"
+                  style="height: 19px; margin-top:25px; opacity:0.7;  position: relative;  top: -76px;right: -160px;"></i>
+              <p class="style1">123 hours</p>
+              <button type="button" class="button">Enrolloment</button>
+            </div>
+            <div class="coloumn">
+              <img src="assets/images/currency-3077534_1280.jpg" alt="" srcset="">
+              <p>take a risk and improve your life </p>
+              <i><img src="assets/images/stack.svg" style="height: 19px; margin-top:25px; opacity:0.7;"></i>
+              <p class="style">23 lesson</p>
+              <i><img src="assets/images/clock.svg"
+                  style="height: 19px; margin-top:25px; opacity:0.7;  position: relative;  top: -76px;right: -160px;"></i>
+              <p class="style1">123 hours</p>
+              <button type="button" class="button">Enrolloment</button>
+            </div>
+
+            <div class="coloumn">
+              <img src="assets/images/currency-3077534_1280.jpg" alt="" srcset="">
+              <p>take a risk and improve your life </p>
+              <i><img src="assets/images/stack.svg" style="height: 19px; margin-top:25px; opacity:0.7;"></i>
+              <p class="style">23 lesson</p>
+              <i><img src="assets/images/clock.svg"
+                  style="height: 19px; margin-top:25px; opacity:0.7;  position: relative;  top: -76px;right: -160px;"></i>
+              <p class="style1">123 hours</p>
+              <button type="button" class="button">Enrolloment</button>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROPERTY
+      -->
+
+      <section class="property" id="property">
+        <div class="container">
+
+          <center>
+            <h2 class="h2 section-title">Team of Experts</h2>
+          </center>
+
+          <ul class="property-list has-scrollbar">
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/david-goggins-log-lift_s.png" alt="New Apartment Nice View" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"></div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Belmont Gardens, Chicago</address>
+                    </button>
+
+
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong>David Goggins</strong>
+                  </div>
+
+
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, labore sed eaque earum fugiat fugit
+                    voluptatum. Temporibus exercitationem quo expedita fugiat inventore et, pariatur quae. Delectus
+                    quisquam deleniti impedit rem.
+                  </p>
+
+
+                </div>
+
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/tate.png" alt="Modern Apartments" class="w-100">
+                  </a>
+
+                  <div class="card-badge orange"></div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>UAE, Dubai</address>
+                    </button>
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong>Andrew Tate</strong>
+                  </div>
+                  <!--                   
+                  <h3 class="h3 card-title">
+                    <a href="#">Future Investments</a>
+                  </h3> -->
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, ratione magnam delectus quod inventore
+                    quos quas natus labore quidem reiciendis totam rem ducimus dolore provident et assumenda quisquam
+                    sint perspiciatis.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/peterson.png" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"></div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>UK, Birmingham</address>
+                    </button>
+
+
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong>Jordan Peterson</strong>
+                  </div>
+
+                  <!-- <h3 class="h3 card-title">
+                    <a href="#">Market Prediction</a>
+                  </h3> -->
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloribus ab, quo praesentium quos
+                    adipisci quam quibusdam numquam veritatis dolor vero. Quos accusantium aspernatur nobis velit harum
+                    officia aperiam. Ipsam.
+                  </p>
+
+
+
+                </div>
+            </li>
+
+            <li>
+              <div class="property-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img src="./assets/images/dicap.jpg" class="w-100">
+                  </a>
+
+                  <div class="card-badge green"></div>
+
+                  <div class="banner-actions">
+
+                    <button class="banner-actions-btn">
+                      <ion-icon name="location"></ion-icon>
+
+                      <address>Washington, Bellevue</address>
+                    </button>
+
+
+
+                  </div>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-price">
+                    <strong>Leonardo Di Caprio</strong>
+                  </div>
+
+                  <!-- <h3 class="h3 card-title">
+                    <a href="#">Stock Market</a>
+                  </h3> -->
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas tempore illum voluptatem molestias
+                    aspernatur odit reiciendis corrupti fuga fugiat sed ipsa expedita a, nulla eos vitae aut debitis
+                    possimus exercitationem!
+                  </p>
+                </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+    - #FOOTER
+  -->
+
+      <footer class="footer" id="contact">
+
+        <div class="footer-top">
+          <div class="container">
+
+
+            <div class="footer-brand">
+
+              <ul class="contact-list">
+
+                <li>
+                  <a href="#" class="contact-link">
+                    <ion-icon name="location-outline"></ion-icon>
+
+                    <address>Brooklyn, New York, United States</address>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="tel:+0123456789" class="contact-link">
+                    <ion-icon name="call-outline"></ion-icon>
+
+                    <span>+923102875811</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="mailto:contact@NLP.com" class="contact-link">
+                    <ion-icon name="mail-outline"></ion-icon>
+
+                    <span>contact@NLP.com</span>
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="social-list">
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+
+
+              </ul>
+
+            </div>
+
+            <p><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3307.6749744710155!2d71.54182047443179!3d34.000881373176384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d917bf1e05455d%3A0x9bb0d74b7b5d5600!2sDeans%20Shopping%20Mall%20(Deans%20Trade%20Center%20Peshawar)!5e0!3m2!1sen!2s!4v1689793098043!5m2!1sen!2s"
+                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+          </div>
+
+        </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="container">
+
+            <p class="copyright">
+              &copy; 2022 <a href="#">DeviQo</a>. All Rights Reserved
+            </p>
+
+          </div>
+        </div>
+
+
+      </footer>
+
+
+
+
+
+      <!-- 
+    - custom js link
+  -->
+      <script src="./assets/js/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+      <!-- 
+    - ionicon link
+  -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="/NLP Project/template/assets/bootstrap/bootstrap-4.6.2-dist/js/bootstrap.js"></script>
+</body>
+
+</html>
